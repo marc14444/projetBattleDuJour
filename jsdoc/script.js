@@ -1,4 +1,5 @@
 let submit = document.querySelector('input[type="button"]');
+let supprimer = document.querySelector(".delete");
 submit.addEventListener("click", (e) => {
   const nom = document.querySelector("#nom").value;
   const prenom = document.querySelector("#prenom").value;
@@ -9,7 +10,6 @@ submit.addEventListener("click", (e) => {
 
   const allTr = table.querySelectorAll("tr");
   const content = allTr.length;
-  // console.log(content);
 
   const info = `<tr id="${content + 1}">
   <td data-title="N°">${content + 1}</td>
@@ -17,11 +17,14 @@ submit.addEventListener("click", (e) => {
   <td data-title="PRENOM">${prenom}</td>
   <td data-title="NATIONALITE">${nationalite}</td>
   <td data-title="SPECIALITE">${specialite}</td>
-  <td data-title="MODIFICATION" ><i class="edite"  id="edite-${
+  <td data-title="MODIFICATION" ><button class="edite"  id="edite-${
     content + 1
-  }">Edite</i> <i class="delete" id="delete-${content + 1}">Delete</i></td>
+  }">Modifier</button> <button class="delete" id="delete-${content + 1}">Supprimer</button></td>
 </tr>`;
 
   table.innerHTML += info;
   console.log(table);
+
 });
+
+
