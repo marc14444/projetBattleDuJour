@@ -1,5 +1,5 @@
 let submit = document.querySelector('input[type="button"]');
-let supprimer = document.querySelector(".delete");
+
 submit.addEventListener("click", (e) => {
   const nom = document.querySelector("#nom").value;
   const prenom = document.querySelector("#prenom").value;
