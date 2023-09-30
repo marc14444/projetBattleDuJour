@@ -13,10 +13,10 @@ submit.addEventListener("click", (e) => {
 
   const info = `<tr id="${content + 1}">
   <td data-title="N°">${content + 1}</td>
-  <td data-title="NOM">${nom}</td>
-  <td data-title="PRENOM">${prenom}</td>
-  <td data-title="NATIONALITE">${nationalite}</td>
-  <td data-title="SPECIALITE">${specialite}</td>
+  <td data-title="TÂCHES ">${nom}</td>
+  <td data-title="DESCRIPTION DE LA TÂCHE ">${prenom}</td>
+  <td data-title="DATE">${nationalite}</td>
+  <td data-title="HEURE">${specialite}</td>
   <td data-title="MODIFICATION" ><button class="edite"  id="edite-${
     content + 1
   }">Modifier</button> <button class="delete" id="delete-${content + 1}">Supprimer</button></td>
