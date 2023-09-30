@@ -1,0 +1,132 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;}
+  
+  input[type=text] {
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+  }
+  input[type=text]:focus{
+    border: 1px solid orange;
+  }
+  label{margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;}
+  
+  input[type=button] {
+    background-color: #1255a2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=button]:hover {
+    background-color: #1872D9;
+  }
+  
+  .container {
+    /* Ajouter box-sizing */
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:#f2f2f2;
+    padding:20px;
+    width: 100%;
+    /* redéfinition 400 + 2*20 */
+    max-width: 440px;
+    margin:0 auto;
+  }
+  h1  {
+    color: #ffc800;
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+table {
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+thead {
+  background-color: purple;
+  color: white;
+}
+
+th,
+td {
+  padding: 8px 0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.edite{
+    outline: none;
+    background-color: rgb(23, 105, 237);
+    color: rgb(255, 255, 255);
+    /* margin-left: -50px; */
+    padding: 5px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.delete{
+    outline: none;
+    background-color: rgb(242, 9, 75);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    content: attr(data-title);
+  }
+}

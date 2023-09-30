@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssdoc/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>My Users list</h1>
+        <form action="#!">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" placeholder="Votre nom...">
+
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Votre prénom...">
+
+          <label for="nationalite">Nationalité</label>
+          <input type="text" id="nationalite" name="nationalite" placeholder="Votre nationalite...">
+
+          <label for="specialite">Spécialité</label>
+          <input type="text" id="specialite" name="specialite" placeholder="Votre spécialité...">
+          
+      
+          <input type="button" value="Envoyer">
+        </form>
+      </div>
+      
+
+    <table>
+      <thead>
+        <tr>
+          <th>#ID</th>
+          <th>NOM</th>
+          <th>PRENOM(S)</th>
+          <th>NATIONALITE</th>
+          <th>SPECIALITE</th>
+          <th>ACTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="01">
+          <td data-title="N°">01</td>
+          <td data-title="NOM">XXXX</td>
+          <td data-title="PRENOM">XXXX XXXX</td>
+          <td data-title="NATIONALITE">XXXX</td>
+          <td data-title="SPECIALITE">XXXX</td>
+          <td data-title="MODIFICATION"><i class="edite" id="edite-01">Edite</i> <i class="delete" id="delete-01">Delete</i></td>
+        </tr>
+        <tr id="02">
+            <td data-title="N°">02</td>
+            <td data-title="NOM">XXXX</td>
+            <td data-title="PRENOM">XXXX XXXX</td>
+            <td data-title="NATIONALITE">XXXX</td>
+            <td data-title="SPECIALITE">XXXX</td>
+            <td data-title="MODIFICATION" ><i class="edite"  id="edite-02">Edite</i> <i class="delete" id="delete-02">Delete</i></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="./jsdoc/script.js"></script>
+</html>
